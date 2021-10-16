@@ -99,7 +99,6 @@ contract SimpleBank {
       // 4. Emit the appropriate event associated with this function
       emit LogDepositMade(msg.sender, msg.value);
       // 5. return the balance of sndr of this transaction
-      enrolled[msg.sender] = false;
       return balances[msg.sender];
     }
 
